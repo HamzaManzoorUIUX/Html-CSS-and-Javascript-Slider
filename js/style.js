@@ -48,3 +48,10 @@ function autoslider() {
     setTimeout(autoslider, 5000)
 }
 autoslider();
+
+var MDScr=document.getElementById("MDScroll");
+
+function bodyElementFun(){
+    var y = MDScroll.scrollTop;
+    console.log(y);
+}
