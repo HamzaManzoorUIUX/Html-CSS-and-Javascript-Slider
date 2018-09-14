@@ -129,13 +129,8 @@
 
      #leftArrow,
      #rightArrow {
-         background-color: rgba(53, 53, 53, 0);
-     }
-
-     #leftArrow:hover,
-     #rightArrow:hover {
-         background-color: rgba(53, 53, 53, 0);
-     }
+        display: none;
+    }
 
      #frontData>.row>.input-field {
          text-align: center;
