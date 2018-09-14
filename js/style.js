@@ -49,10 +49,11 @@ function autoslider() {
 }
 autoslider();
 
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if(window.scrollTop>300){
-            alert("ok");
-        }
-    })
-})
+var navbarElement=document.getElementsByClassName('nav');
+console.log(navbarElement)
+function scrollChanger(){
+    if(window.scrollY>100){
+    }
+    if(window.scrollY<100){
+    }
+}
