@@ -49,11 +49,15 @@ function autoslider() {
 }
 autoslider();
 
-var navbarElement=document.getElementsByClassName('nav');
-console.log(navbarElement)
+var navbarElement=document.getElementById('nav');
+var scrollHeight=screen.height-70;
 function scrollChanger(){
-    if(window.scrollY>100){
+    if(window.scrollY>scrollHeight){
+        navbarElement.classList.remove("transparent");
+        navbarElement.classList.add("red");
     }
-    if(window.scrollY<100){
+    if(window.scrollY<scrollHeight){
+        navbarElement.classList.remove("red");
+        navbarElement.classList.add("transparent");
     }
 }
