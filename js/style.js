@@ -49,9 +49,10 @@ function autoslider() {
 }
 autoslider();
 
-var MDScr=document.getElementById("MDScroll");
-
-function bodyElementFun(){
-    var y = MDScroll.scrollTop;
-    console.log(y);
-}
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if(window.scrollTop>300){
+            alert("ok");
+        }
+    })
+})
